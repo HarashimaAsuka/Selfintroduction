@@ -4,7 +4,9 @@ using UnityEngine.UI;
  
 public class ButtonManager : MonoBehaviour
 {
-    public Text Name;
+    public Text questionText;
+    public string answer;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -18,6 +20,8 @@ public class ButtonManager : MonoBehaviour
     }
  
     public void OnClickButton(){
-        Name.gameObject.SetActive(true);
+        questionText.text = answer;
     }
+
+    
 }
